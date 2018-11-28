@@ -9,6 +9,7 @@
 	perspective: 1000px;
 	cursor: pointer;
 	border:none;
+	box-shadow: 4px 4px 4px rgb(188, 188, 188, 0.25), 8px 8px 8px rgb(140, 140, 140, 0.75);
 }
 
 .Logo{
@@ -52,7 +53,7 @@
 
 
 body{
-	background: black;
+	background: #dddddd;
 }
 
 .sidepanel  {
@@ -75,6 +76,7 @@ body{
     color: #818181;
     display: block;
     transition: 0.3s;
+	position: relative;
 }
 
 .sidepanel a:hover {
@@ -91,16 +93,12 @@ body{
 .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #f15a24;
-    color: white;
+    background-color: transparent;
+    color: #f15a24;
     padding: 10px 15px;
     border: none;
 }
 
 .openbtn:hover {
     background-color:#e5b192;
-}
-
-.ham {
-	
 }
