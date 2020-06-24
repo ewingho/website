@@ -1,40 +1,147 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Ewing Ho</title>
-		<link rel="stylesheet" href="mystyle.css"> <!--CSS link-->
-		<!--Favicon-->
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
-		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-		<meta name="msapplication-TileColor" content="#da532c">
-		<meta name="theme-color" content="#ffffff">
-		<!--Favicon end-->
-		<meta name="viewport" content="width=device-width, initial-scale=1"><!--Change viewport based on device width-->
-	</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title>3D-Model Project Gallery</title>
+	<link rel="stylesheet" href="3d-model.css">
+</head>
+
+<body>
+	<a href="http://ewingho.me">
+		<img style="display:inline-block; margin: left; width: 10%;" src="mstile-150x150.png">
+	</a>
+	<h1 style="text-align:center">3D Renders Gallery</h1>
+	<h2 style="text-align:center">Here are examples of projects I have worked on for 3D modeling. All models were made using Autodesk Fusion 360 or Blender</h2>
+	<div id="myBtnContainer">
+		<button class="btn active" onclick="filterSelection('all')">Show all</button>
+		<button class="btn" onclick="filterSelection('model')">Model</button>
+		<button class="btn" onclick="filterSelection('drawing')">Drawings</button>
+	</div>
 	
-	<body>
-		<div id="mySidepanel" class="sidepanel">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">	&#735;</a>
-			<!--<a class="nav" href="about.html">About</a>-->
-			<a class="nav" href="3d-model.html">3D-Modeling Gallery</a>
-			<!--<a class="nav" href="design.html">Design Gallery</a>-->
-			<!--<a class="nav" href="coding.html">Coding Gallery</a>-->
-		</div>
-		
-		<button class="openbtn" onclick="openNav()">&#9776; Menu</button>
-		
-		<button class="cardLogo" onclick="location.href='downloads/Ewing-Ho-Resume.pdf'">
-			<img src="sources/Logo.png" class="Logo" alt="Logo">
-			<div class="middle">
-				<p class="logoHead">Resume</p>
-				<p class="logoText">3D Modeler and Artist</p>
-				<p class="logoText">Photographer</p>
-				<p class="logoText">Electrical Engineer in Training</p>
+	<div class="row">
+	<!--Filter for frame-->
+		<div class="column model">
+			<div class="content">
+				<button class="imgBtn" onclick="window.open('frame.html');">
+				<img src="3d-model-gallery/3GP-v71.jpg" alt="3GP-v71" style="width:100%;">
+				<h4>Generator</h4>
+				<p>Generator body</p>
+				</button>
 			</div>
-		</button>
-		<script src="index.js"></script>
-	</body>
+		</div>
+		<div class="column model">
+			<div class="content">
+				<button class="imgBtn" onclick="window.open('air-cleaner.html');">
+				<img src="3d-model-gallery/10-1003 v22.jpg" alt="10-1003 v22" style="width:100%;">
+				<h4>Air cleaner</h4>
+				<p>disel oil bath air cleaner</p>
+				</button>
+			</div>
+		</div>
+		<div class="column model">
+			<div class="content">
+				<button class="imgBtn" onclick="window.open('air-cleaner.html');">
+				<img src="3d-model-gallery/10-1003 v23.jpg" alt="10-1003 v23" style="width:100%;">
+				<h4>Air cleaner</h4>
+				<p>disel oil bath air cleaner</p>
+				</button>
+			</div>
+		</div>
+		<div class="column model">
+			<div class="content">
+				<button class="imgBtn" onclick="window.open('receptacle.html');">
+				<img src="3d-model-gallery/receptacle-v20.jpg" alt="receptacle-v20" style="width:100%;">
+				<h4>Receptacle</h4>
+				<p>460V plug receptacle for reefer containers</p>
+				</button>
+			</div>
+		</div>
+		<div class="column model">
+			<div class="content">
+				<button class="imgBtn" onclick="window.open('mech-mk-ii.html');">
+				<img src="3d-model-gallery/mech-mk-ii-rev5.png" alt="mech-mk-ii-rev5" style="width:25%;">
+				<h4>Original Mech Design</h4>
+				<p>Original Mech Design built and rendered in Blender. Model is fully rigged and posable</p>
+				</button>
+			</div>
+		</div>
+		<div class="column model">
+			<div class="content">
+				<button class="imgBtn" onclick="window.open('3d-model-gallery/Zr-01-Rev8.png');">
+				<img src="3d-model-gallery/Zr-01-Rev8.png" alt="Zr-01-Rev8" style="width:100%;">
+				<h4>Helmet Design</h4>
+				<p>Helmet render sculpted and modeled in Blender</p>
+				</button>
+			</div>
+		</div>
+		<div class="column model">
+			<div class="content">
+				<button class="imgBtn" onclick="window.open('3d-model-gallery/Chemical-Vial-rev6.png');">
+				<img src="3d-model-gallery/Chemical-Vial-rev6.png" alt="Chemical-Vial-rev6" style="width:90%;">
+				<h4>Chemical Vials</h4>
+				<p>Render of chemical vials using hard surface modeling techniques in Blender</p>
+				</button>
+			</div>
+		</div>
+		<div class="column model">
+			<div class="content">
+				<button class="imgBtn" onclick="window.open('3d-model-gallery/mjolnir-rev7.png');">
+				<img src="3d-model-gallery/mjolnir-rev7.png" alt="mjolnir-rev7" style="width:90%;">
+				<h4>Mjolnir in Stone</h4>
+				<p>Mjolnir modeled using blender. Procedurally generated textures and materials test. </p>
+				</button>
+			</div>
+		</div>
+		<div class="column model">
+			<div class="content">
+				<button class="imgBtn" onclick="window.open('3d-model-gallery/donut with sprinkles.png');">
+				<img src="3d-model-gallery/donut with sprinkles.png" alt="Donut with Sprinkles" style="width:100%;">
+				<h4>Donut with Sprinkles</h4>
+				<p>Hi resolution and particle system test</p>
+				</button>
+			</div>
+		</div>
+
+		<div class="column drawing">
+			<div class="content">
+				<button class="imgBtn" onclick="window.open('3d-model-gallery/3GP Frame Drawing v7.pdf');">
+				<img src="3d-model-gallery/3gp-drawing.jpg" alt="3GP-drawing" style="width:100%;">
+				<h4>Generator Body Drawing</h4>
+				<p>Drawing for generator body with exploded view</p>
+				</button>
+			</div>
+		</div>
+		<div class="column drawing">
+			<div class="content">
+				<button class="imgBtn" onclick="window.open('3d-model-gallery/60-1022 Drawing v1.pdf');">
+				<img src="3d-model-gallery/receptacle-drawing.jpg" alt="receptacle-drawing" style="width:100%;">
+				<h4>460V Receptacle</h4>
+				<p>Drawing for 460V eletrical receptacle</p>
+				</button>
+			</div>
+		</div>
+		<div class="column drawing">
+			<div class="content">
+				<button class="imgBtn" onclick="window.open('3d-model-gallery/70-2003 Drawing v5.pdf');">
+				<img src="3d-model-gallery/70-2003-drawing.jpg" alt="70-2003-drawing" style="width:100%;">
+				<h4>Generator Service Door</h4>
+				<p>Drawing of service door for generator</p>
+				</button>
+			</div>
+		</div>
+		<div class="column drawing">
+			<div class="content">
+				<button class="imgBtn" onclick="window.open('3d-model-gallery/70-2005 Drawing v1.pdf');">
+				<img src="3d-model-gallery/70-2005-drawing.jpg" alt="70-2005-drawing" style="width:100%;">
+				<h4>Battery Side Body Panel</h4>
+				<p>Drawing of battery side panel for generator</p>
+				</button>
+			</div>
+		</div>	
+	</div>
+		
+
+	<script src="3d-model.js"></script>
+    
+</body>
 </html>
